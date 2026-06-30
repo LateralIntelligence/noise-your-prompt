@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Run artifacts (checkpoints, hydra dirs, results)
+outputs/
+checkpoints/
+wandb/
+
+# Regenerable, seed-deterministic dataset cache (root-level only; not configs/data/)
+/data/
+
+# Secrets / local env
+.env
+.env.*
