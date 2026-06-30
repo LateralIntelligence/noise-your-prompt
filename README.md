@@ -1,10 +1,6 @@
 # Flow Language Models for Combinatorial Reasoning
 
-Reference implementation for the **Flow Language Model (FLM)** experiments on
-combinatorial-reasoning puzzles. An FLM is a discrete-flow / diffusion model that
-solves puzzles by **in-place infilling**: it is shown a board with some cells held
-clean as conditioning (the clues) and learns to denoise the remaining cells into a
-valid solution.
+Reference implementation for **Noise Your Prompt: Noising Conditioning Tokens in Continuous Diffusion Language Models**
 
 This repo contains the minimal code to reproduce the two main experiments:
 
@@ -29,16 +25,6 @@ pip install flash-attn==2.8.3 --no-build-isolation
 A CUDA GPU is required. Weights & Biases logging is optional — run with
 `WANDB_MODE=offline` (used below) and no account or API key is needed.
 
-## Quick check (no GPU-hours)
-
-Verify the full train → eval pipeline end-to-end in ~1–2 minutes with tiny
-step counts and tiny data (this does **not** reproduce paper numbers):
-
-```bash
-bash reproduce/smoke_test.sh
-```
-
-It should finish with `== smoke OK ==` after writing a `results.json` for each task.
 
 ## Reproducing the main results
 

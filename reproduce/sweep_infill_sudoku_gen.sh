@@ -47,10 +47,10 @@ DIFFICULTY="${DIFFICULTY:-hard}"          # easy / medium / hard
 NUM_TRAIN="${NUM_TRAIN:-10000}"
 NUM_VALID="${NUM_VALID:-2000}"
 
-GLOBAL_BATCH="${GLOBAL_BATCH:-32}"
-MAX_STEPS="${MAX_STEPS:-160001}"
+GLOBAL_BATCH="${GLOBAL_BATCH:-256}"
+MAX_STEPS="${MAX_STEPS:-40001}"
 VAL_CHECK_INTERVAL="${VAL_CHECK_INTERVAL:-10000}"
-CKPT_EVERY="${CKPT_EVERY:-50000}"
+CKPT_EVERY="${CKPT_EVERY:-10000}"
 # Plain FLM has no discrete timestep grid, so sudoku generation uses this many
 # Euler steps (kept modest so the per-eval cost stays tractable).
 SAMPLING_STEPS="${SAMPLING_STEPS:-128}"
