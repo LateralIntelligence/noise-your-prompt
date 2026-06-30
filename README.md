@@ -1,4 +1,4 @@
-# Flow Language Models for Combinatorial Reasoning
+# Noise Your Prompt: Noising Conditioning Tokens in Continuous Diffusion Language Models
 
 Reference implementation for **Noise Your Prompt: Noising Conditioning Tokens in Continuous Diffusion Language Models**
 
@@ -10,7 +10,7 @@ This repo contains the minimal code to reproduce the two main experiments:
   accuracy and coverage (distinct valid solutions found), binned by the number of
   solutions per puzzle.
 
-Both datasets are **generated deterministically in-memory from a seed** — there is no
+Both datasets are generated deterministically in-memory from a seed — there is no
 dataset to download. (Sudoku additionally caches its generated shards under `data/`
 to skip regeneration on reruns; that cache is git-ignored and rebuilt automatically.)
 
